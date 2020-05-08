@@ -4,6 +4,9 @@ const bodyParser = require("body-parser");
 
 const items = require('./routes/api/items');
 
+// location of public directory
+const PUBLIC_DIR = process.cwd() + '/dist';
+
 // initialize express into a variable called app
 const app = express();
 
@@ -30,6 +33,8 @@ if (process.env.NODE_ENV === 'production') {
         else res.redirect(`https://'${req.headers.host}${req.url}`);
     });
 }
+
+app.use(express.static(PUBLIC_DIR));
 
 app.listen(port, () => console.log(`App listening on port ${port}`));
 
