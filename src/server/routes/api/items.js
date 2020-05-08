@@ -35,9 +35,11 @@ router.put('/:id', (req, res) => {
         {
             new: true
         })
-        .then(() => res.json({ success: true }))
+        .then(() => res.json({
+            success: true }))
         // return 404 if not found
-        .catch(err => res.status(404).json({ success: false }) )
+        .catch(err => res.status(404).json({
+            success: false }) )
 })
 
 // Delete
@@ -50,9 +52,10 @@ router.delete('/:id', (req, res) => {
                 .then(() => res.json({
                     success: true }))
                 // return 404 if not found
-                .catch(err => res.status(404).json({ success: false }) )
+                .catch(err => res.status(404).json({
+                    success: false }) )
         })
+
 })
 
 module.exports = router;
-
