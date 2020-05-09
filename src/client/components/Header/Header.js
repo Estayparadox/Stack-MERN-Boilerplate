@@ -26,7 +26,7 @@ class Header extends Component {
         return (
             <div>
                 <Navbar color="light" light expand="md" className="mb-5">
-                    <NavbarBrand href="/">MERN Stack</NavbarBrand>
+                    <NavbarBrand href="/">Generic MERN Stack</NavbarBrand>
                     <NavbarToggler onClick={this.toggle} />
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className="ml-auto" navbar>
