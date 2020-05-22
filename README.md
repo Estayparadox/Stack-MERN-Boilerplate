@@ -1,4 +1,4 @@
-# GENERIC MERN STACK
+# MERN STACK BOILERPLATE
 
 ## Getting Started
 
