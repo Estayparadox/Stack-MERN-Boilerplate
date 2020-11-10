@@ -2,6 +2,8 @@ const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 
+require('dotenv').config()
+
 const items = require('./routes/api/items');
 
 // location of public directory
@@ -14,7 +16,7 @@ const app = express();
 app.use(bodyParser.json());
 
 // MongoDB configuration
-const db = require('../../config/keys').mongodbURI;
+const db = process.env.MONGODB_URI;
 
 // connect to MongoDB
 mongoose.connect(db, { useNewUrlParser: true, useUnifiedTopology: true })
