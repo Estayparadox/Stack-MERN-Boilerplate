@@ -1,8 +1,17 @@
 # MERN STACK BOILERPLATE
+![badge1](https://img.shields.io/badge/license-MIT-brightgreen.svg) ![badge2](https://img.shields.io/badge/language-NodeJS-yellow) ![badge3](https://img.shields.io/badge/language-ReactJS-blue)
 
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+
+### Prerequisites
+
+First of all, create a .env file at the root of your project like this
+```
+PORT=<port you want to run your server>
+MONGODB_URI=<url of your mongodb>
+```
 
 ### Installing
 
